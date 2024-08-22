@@ -65,6 +65,7 @@ public class Main {
         System.out.println("Name :" + lecturer.getName());
         System.out.println("Subject :" + lecturer.getSubject());
 
+
         transaction.commit();
         session.close();
     }
