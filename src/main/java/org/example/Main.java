@@ -25,11 +25,14 @@ public class Main {
 
         ClassRoom clazz = new ClassRoom();
 
+
         clazz.setId(1);
         clazz.setName("Winchester");
         clazz.setCount(55);
 
-        session.save(clazz);
+//        session.save(clazz);
+//        session.update(clazz);
+        session.delete(clazz);
 
         transaction.commit();
         session.close();
